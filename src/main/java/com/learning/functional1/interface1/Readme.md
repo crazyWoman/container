@@ -1,5 +1,7 @@
 An interface with exactly one abstract method is called Functional Interface.
+
 A functional interface can have any number of default methods.
+
 @FunctionalInterface annotation is added so that we can mark an interface as functional interface.
 
 Runnable, ActionListener, Comparable are some of the examples of functional interfaces.

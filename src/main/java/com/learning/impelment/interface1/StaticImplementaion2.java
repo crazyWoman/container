@@ -5,7 +5,6 @@ import com.learning.interface1.StaicInterface;
 public class StaticImplementaion2 implements StaicInterface {
     public boolean isNull(String str) {
         System.out.println("Impl Null Check");
-
         return str == null ? true : false;
     }
 
@@ -13,5 +12,6 @@ public class StaticImplementaion2 implements StaicInterface {
         StaticImplementaion2 obj = new StaticImplementaion2();
         obj.print("");
         obj.isNull("abc");
+        StaicInterface.isNull("abc");
     }
 }

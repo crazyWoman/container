@@ -6,10 +6,16 @@ import java.util.function.Consumer;
 
 public class ConsumerTest {
     public static void main(String[] args) {
-        Consumer<Integer> consumer = (a)-> System.out.println(a);
+        Consumer<Integer> consumer = (a)-> System.out.println(a +100);
         consumer.accept(200);
 
-        Consumer<List<Integer> > consumer1 = list -> {
+        Consumer<String> smithaConsumer = (str)-> System.out.println(str+" Meenekkodath");
+
+        smithaConsumer.accept("Smitha");
+
+
+
+       /* Consumer<List<Integer> > consumer1 = list -> {
             for( int i=0; i<list.size(); i++){
                 list.set(i, list.get(i)*4);
             }
@@ -24,7 +30,7 @@ public class ConsumerTest {
         list2.stream().forEach(a-> System.out.println(a));
 
         Consumer<String> consumer2 = (a)-> System.out.println(a+" u r good");
-        consumer2.accept("Rhea ");
+        consumer2.accept("Rhea ");*/
     }
 
 
