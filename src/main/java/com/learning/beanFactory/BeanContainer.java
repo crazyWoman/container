@@ -13,8 +13,8 @@ import org.springframework.context.ApplicationContext;
 public class BeanContainer {
     public static void main(String[] args) {
         {
-          ApplicationContext context= SpringApplication.run(BeanContainer.class, args);
-            Person person =  (Person) context.getBean(Person.class);
+            ApplicationContext context = SpringApplication.run(BeanContainer.class, args);
+            Person person = (Person) context.getBean(Person.class);
             System.out.println(person.getAge());
             System.out.println(person.getName());
 
