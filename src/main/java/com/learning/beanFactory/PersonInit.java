@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 @Service
 public class PersonInit  {
-    @Autowired
+  /*  @Autowired
     Person person;
 
     @PostConstruct
     public void init(){
         System.out.println("*********after bean instaantiated");
         person.setName("Rohan Perumalil");
-    }
+    }*/
 
 }

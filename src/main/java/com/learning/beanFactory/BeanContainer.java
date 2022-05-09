@@ -16,7 +16,7 @@ public class BeanContainer {
             ApplicationContext context = SpringApplication.run(BeanContainer.class, args);
             Person person = (Person) context.getBean(Person.class);
             System.out.println(person.getAge());
-            System.out.println(person.getName());
+
 
         }
         }
